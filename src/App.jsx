@@ -694,13 +694,28 @@ function Closing() {
             Ex Founder - Ekdor
           </p>
           <p className="text-white/35 text-sm">
-            anisha_jain@pg26.mesaschool.co&ensp;|&ensp;linkedin.com/in/anishajain15051999
+            anisha_jain@pg26.mesaschool.co&ensp;|&ensp;
+            <a
+              href="https://www.linkedin.com/in/anishajain15051999"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors duration-150"
+            >
+              LinkedIn
+            </a>
+            &ensp;|&ensp;
+            <a
+              href="tel:+919599779109"
+              className="hover:text-white transition-colors duration-150"
+            >
+              +91 95997 79109
+            </a>
           </p>
         </div>
 
         {/* Bottom footnote */}
         <p className="mt-20 text-[#029d61] text-[10px] font-bold uppercase tracking-[0.22em]">
-          Built as a proactive pitch for the Marketing Head role at DriveU.
+          Built as a proactive pitch for the Marketing Manager role at DriveU.
         </p>
       </div>
     </section>
