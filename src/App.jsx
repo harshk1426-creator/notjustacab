@@ -110,7 +110,7 @@ const SERIES = [
     number: '03',
     audience: 'The Indian Family',
     tagline: 'One Sunday. Four destinations. One solution.',
-    image: '/script-3.png',
+    image: '/script_3.png',
     scenes: [
       {
         icon: Calendar,
