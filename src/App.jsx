@@ -381,7 +381,7 @@ function Hero() {
           className="text-xs sm:text-sm font-semibold uppercase tracking-[0.22em] text-white/40 animate-fade-in"
           style={{ animationDelay: '0.4s' }}
         >
-          A 360° Campaign Pitch for DriveReserve by DriveU
+          A 360° Campaign Pitch for DriveU Reserve by DriveU
         </p>
 
         {/* Subtext */}
