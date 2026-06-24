@@ -491,9 +491,9 @@ function ContentSeries() {
           className="font-extrabold text-[#0a0a0a] leading-tight mb-5"
           style={{ fontSize: 'clamp(2.4rem, 5.5vw, 4.5rem)' }}
         >
-          Three Stories. One Truth.
+          3 Script Ideas
         </h2>
-        <p className="text-gray-400 text-lg max-w-2xl leading-relaxed mb-20">
+        <p className="text-[#0a0a0a] text-lg max-w-2xl leading-relaxed mb-20">
           Each content series targets a different DriveU user persona and ends with the same
           emotional resolution - Comfort Like Your Own Car.
         </p>
