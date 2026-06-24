@@ -299,51 +299,14 @@ function Navbar() {
       ].join(' ')}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Wordmark */}
-        <a href="#" className="flex items-center gap-2 select-none" onClick={handleLink}>
-          <span className="text-[#029d61] font-extrabold text-base tracking-tight">DriveReserve</span>
-          <span className="text-white/25 text-base font-light">×</span>
-          <span className="text-white font-semibold text-base tracking-tight">#NotJustACab</span>
+        {/* DriveU logo */}
+        <a href="#" className="flex items-center select-none" onClick={handleLink}>
+          <img src="/driveulogo.webp" alt="DriveU" className="h-8 w-auto" />
         </a>
 
-        {/* Desktop links */}
-        <nav className="hidden md:flex items-center gap-8">
-          {NAV_LINKS.map(({ label, href }) => (
-            <a
-              key={href}
-              href={href}
-              className="text-white/50 hover:text-white text-sm font-medium tracking-wide transition-colors duration-150"
-            >
-              {label}
-            </a>
-          ))}
-        </nav>
-
-        {/* Mobile toggle */}
-        <button
-          className="md:hidden text-white/70 hover:text-white transition-colors"
-          onClick={() => setOpen(v => !v)}
-          aria-label="Toggle menu"
-        >
-          {open ? <X size={22} /> : <Menu size={22} />}
-        </button>
+        {/* Campaign tag */}
+        <span className="text-white font-semibold text-base tracking-tight">#NotJustACab</span>
       </div>
-
-      {/* Mobile dropdown */}
-      {open && (
-        <div className="md:hidden bg-[#0a0a0a] border-t border-white/[0.06] px-6 py-5 flex flex-col gap-5">
-          {NAV_LINKS.map(({ label, href }) => (
-            <a
-              key={href}
-              href={href}
-              onClick={handleLink}
-              className="text-white/60 hover:text-white font-medium text-sm tracking-wide transition-colors duration-150"
-            >
-              {label}
-            </a>
-          ))}
-        </div>
-      )}
     </header>
   )
 }
