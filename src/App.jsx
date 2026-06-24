@@ -20,19 +20,19 @@ const NAV_LINKS = [
 const INSIGHT_CARDS = [
   {
     label: 'The Insight',
-    body: 'Every DriveU user has been asked — why not just take an Ola? #NotJustACab is the answer. It rejects the cab category entirely and positions DriveReserve as something your own car would be — if it could drive itself.',
+    body: 'Every DriveU user has been asked - why not just take an Ola? #NotJustACab is the answer. It rejects the cab category entirely and positions DriveReserve as something your own car would be - if it could drive itself.',
   },
   {
     label: 'The Audience',
     personas: [
-      'The Urban Professional — daily commute, no parking',
-      'The Frequent Traveler — airport runs, reliability',
-      'The Indian Family — multi-destination, everyone needs a car',
+      'The Urban Professional - daily commute, no parking',
+      'The Frequent Traveler - airport runs, reliability',
+      'The Indian Family - multi-destination, everyone needs a car',
     ],
   },
   {
     label: 'The Tension',
-    body: 'Cabs are familiar but broken — smell, cancellations, noise, strangers. Your own car is comfortable but exhausting to drive. DriveReserve lives in the gap: all the comfort, none of the cost or effort of ownership.',
+    body: 'Cabs are familiar but broken - smell, cancellations, noise, strangers. Your own car is comfortable but exhausting to drive. DriveReserve lives in the gap: all the comfort, none of the cost or effort of ownership.',
   },
 ]
 
@@ -99,7 +99,7 @@ const SERIES = [
       },
       {
         ...RESOLUTION_SCENE,
-        body: 'Reserve DriveReserve. A clean, luxurious car and your chauffeur — at your doorstep. Comfort like your own car.',
+        body: 'Reserve DriveReserve. A clean, luxurious car and your chauffeur - at your doorstep. Comfort like your own car.',
         hashtag: '#NotJustACab',
       },
     ],
@@ -129,7 +129,7 @@ const SERIES = [
       },
       {
         ...RESOLUTION_SCENE,
-        body: 'Because everyone deserves the comfort of their own car. DriveReserve — book cars for everyone.',
+        body: 'Because everyone deserves the comfort of their own car. DriveReserve - book cars for everyone.',
         hashtag: '#NotJustACab',
       },
     ],
@@ -145,7 +145,7 @@ const CHANNELS = [
   {
     Icon: MapPin,
     name: 'OOH + Metro Advertising',
-    desc: 'Static executions of each scene\'s tension moment — placed at metro stations, parking lots, and office complex entrances in Bengaluru, Mumbai, Hyderabad.',
+    desc: 'Static executions of each scene\'s tension moment - placed at metro stations, parking lots, and office complex entrances in Bengaluru, Mumbai, Hyderabad.',
   },
   {
     Icon: MessageCircle,
@@ -155,12 +155,12 @@ const CHANNELS = [
   {
     Icon: Bell,
     name: 'In-App Campaign Banners',
-    desc: 'Contextual banners triggered by user behavior — shown to users who have booked 3+ rides. Banner copy: "You\'ve used DriveU. Now try DriveReserve."',
+    desc: 'Contextual banners triggered by user behavior - shown to users who have booked 3+ rides. Banner copy: "You\'ve used DriveU. Now try DriveReserve."',
   },
 ]
 
 const PHASES = [
-  { weeks: 'Week 1–2',  label: 'Teaser',            desc: '#NotJustACab — no product reveal'    },
+  { weeks: 'Week 1–2',  label: 'Teaser',            desc: '#NotJustACab - no product reveal'    },
   { weeks: 'Week 3–4',  label: 'Content Drop',       desc: 'One series released per week'        },
   { weeks: 'Week 5–6',  label: 'Push Activation',    desc: 'Push to existing base + in-app'      },
   { weeks: 'Week 7–8',  label: 'Review & Iterate',   desc: 'Performance review + iteration'      },
@@ -258,7 +258,7 @@ function ScrollTimeline({ scenes }) {
         })}
       </div>
 
-      {/* Scroll hint — fades out after first scroll */}
+      {/* Scroll hint - fades out after first scroll */}
       <div
         aria-hidden="true"
         className={[
@@ -349,7 +349,7 @@ function Navbar() {
 
 function Hero() {
   return (
-    <section className="min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center relative px-6 pt-20 pb-24 font-jakarta overflow-hidden">
+    <section className="min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center relative pt-20 pb-24 font-jakarta overflow-hidden">
       {/* Subtle radial glow */}
       <div
         aria-hidden="true"
@@ -357,22 +357,25 @@ function Hero() {
         style={{ background: 'radial-gradient(ellipse at center, #029d61 0%, transparent 70%)' }}
       />
 
-      <div className="relative text-center max-w-6xl mx-auto w-full">
-        {/* Cinematic oversized hashtag */}
+      {/* Full-bleed cinematic hashtag - intentionally overflows and clips */}
+      <div className="relative w-full text-center overflow-hidden">
         <h1
-          className="font-extrabold text-white leading-none tracking-tight animate-fade-in"
+          className="font-extrabold text-white leading-none whitespace-nowrap animate-fade-in"
           style={{
-            fontSize: 'clamp(2.8rem, 14vw, 13rem)',
-            letterSpacing: '-0.03em',
+            fontSize: 'clamp(3rem, 17vw, 18rem)',
+            letterSpacing: '-0.04em',
             animationDelay: '0.1s',
           }}
         >
           #NotJustACab
         </h1>
+      </div>
 
+      {/* Below-hashtag copy - contained with padding */}
+      <div className="relative text-center max-w-3xl mx-auto w-full px-6 mt-10">
         {/* Pitch subtitle */}
         <p
-          className="mt-8 text-xs sm:text-sm font-semibold uppercase tracking-[0.22em] text-white/40 animate-fade-in"
+          className="text-xs sm:text-sm font-semibold uppercase tracking-[0.22em] text-white/40 animate-fade-in"
           style={{ animationDelay: '0.4s' }}
         >
           A 360° Campaign Pitch for DriveReserve by DriveU
@@ -384,7 +387,7 @@ function Hero() {
           style={{ animationDelay: '0.55s' }}
         >
           Presenting a campaign that speaks directly to every DriveU user who has ever
-          asked — why not just book a cab?
+          asked - why not just book a cab?
         </p>
 
         {/* Campaign line */}
@@ -448,7 +451,7 @@ function Strategy() {
                   <ul className="space-y-3">
                     {card.personas.map((p, j) => (
                       <li key={j} className="flex items-start gap-3">
-                        <span className="text-[#029d61] mt-0.5 font-bold">—</span>
+                        <span className="text-[#029d61] mt-0.5 font-bold">-</span>
                         <span className="text-white/55 text-sm leading-snug">{p}</span>
                       </li>
                     ))}
@@ -492,7 +495,7 @@ function ContentSeries() {
         </h2>
         <p className="text-gray-400 text-lg max-w-2xl leading-relaxed mb-20">
           Each content series targets a different DriveU user persona and ends with the same
-          emotional resolution — Comfort Like Your Own Car.
+          emotional resolution - Comfort Like Your Own Car.
         </p>
 
         {/* Series blocks */}
@@ -504,7 +507,7 @@ function ContentSeries() {
                   Series {s.number}
                 </span>
                 <span className="text-[#029d61] text-[10px] font-bold uppercase tracking-[0.2em]">
-                  — {s.audience}
+                  - {s.audience}
                 </span>
               </div>
               <p className="text-[#0a0a0a] text-lg font-semibold italic mb-7 leading-snug">
@@ -571,7 +574,7 @@ function Channels() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {PHASES.map(({ weeks, label, desc }, i) => (
               <div key={i} className="relative flex flex-col gap-3">
-                {/* Connector — horizontal line to next phase */}
+                {/* Connector - horizontal line to next phase */}
                 {i < PHASES.length - 1 && (
                   <div
                     aria-hidden="true"
@@ -616,7 +619,7 @@ function Metrics() {
         </h2>
         <p className="text-white/40 text-lg max-w-2xl mb-20 leading-relaxed">
           DriveReserve is a new vertical launch. Every campaign metric ties back to one
-          outcome — rides booked.
+          outcome - rides booked.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
@@ -691,7 +694,7 @@ function Closing() {
 
         {/* Supporting text */}
         <p className="text-white/45 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-20">
-          This campaign is built to do one thing — make every existing DriveU user feel that
+          This campaign is built to do one thing - make every existing DriveU user feel that
           booking a cab was always the compromise. DriveReserve is the upgrade they didn't know
           they could afford.
         </p>
@@ -712,16 +715,16 @@ function Closing() {
             className="text-white font-extrabold leading-tight"
             style={{ fontSize: 'clamp(2rem, 6vw, 4rem)' }}
           >
-            Harsh K.
+            Anisha Jain
           </p>
           <p className="text-white/50 text-base">
-            MBA — Startup Leadership, Mesa School of Business
+            MBA - Startup Leadership, Mesa School of Business
           </p>
           <p className="text-white/35 text-sm">
-            Ex-ARKVEGA Partners&ensp;|&ensp;Founder, Scentense
+            Ex Founder - Ekdor
           </p>
           <p className="text-white/35 text-sm">
-            harshk1426@gmail.com&ensp;|&ensp;linkedin.com/in/harshk1426
+            anisha_jain@pg26.mesaschool.co&ensp;|&ensp;linkedin.com/in/anishajain15051999
           </p>
         </div>
 
