@@ -357,12 +357,12 @@ function Hero() {
         style={{ background: 'radial-gradient(ellipse at center, #029d61 0%, transparent 70%)' }}
       />
 
-      {/* Full-bleed cinematic hashtag - intentionally overflows and clips */}
-      <div className="relative w-full text-center overflow-hidden">
+      {/* Centered hashtag — fully visible, scales with viewport */}
+      <div className="relative w-full text-center px-6">
         <h1
-          className="font-extrabold text-white leading-none whitespace-nowrap animate-fade-in"
+          className="font-extrabold text-white leading-none animate-fade-in"
           style={{
-            fontSize: 'clamp(3rem, 17vw, 18rem)',
+            fontSize: 'clamp(2.5rem, 11vw, 11rem)',
             letterSpacing: '-0.04em',
             animationDelay: '0.1s',
           }}
