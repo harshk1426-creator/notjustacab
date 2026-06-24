@@ -48,6 +48,7 @@ const SERIES = [
     number: '01',
     audience: 'The Urban Professional Woman',
     tagline: 'She didn\'t ask for much. Just a clean, quiet ride.',
+    image: '/script_1.png',
     scenes: [
       {
         icon: Wind,
@@ -78,6 +79,7 @@ const SERIES = [
     number: '02',
     audience: 'The Frustrated Car Owner',
     tagline: 'The day started wrong before it even started.',
+    image: '/script_2.png',
     scenes: [
       {
         icon: AlertTriangle,
@@ -108,6 +110,7 @@ const SERIES = [
     number: '03',
     audience: 'The Indian Family',
     tagline: 'One Sunday. Four destinations. One solution.',
+    image: '/script-3.png',
     scenes: [
       {
         icon: Calendar,
@@ -513,7 +516,11 @@ function ContentSeries() {
               <p className="text-[#0a0a0a] text-lg font-semibold italic mb-7 leading-snug">
                 {s.tagline}
               </p>
-              <ScrollTimeline scenes={s.scenes} />
+              <img
+                src={s.image}
+                alt={`Script ${s.number} - ${s.audience}`}
+                className="w-full rounded-2xl object-contain"
+              />
             </div>
           ))}
         </div>
