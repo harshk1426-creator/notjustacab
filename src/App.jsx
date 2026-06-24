@@ -301,7 +301,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* DriveU logo */}
         <a href="#" className="flex items-center select-none" onClick={handleLink}>
-          <img src="/driveulogo.webp" alt="DriveU" className="h-16 w-auto" />
+          <img src="/driveulogo.webp" alt="DriveU" className="h-[100px] w-auto" />
         </a>
 
         {/* Campaign tag */}
