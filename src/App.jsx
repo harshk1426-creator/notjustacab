@@ -205,7 +205,7 @@ function ScrollTimeline({ scenes }) {
         className="flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4 no-scrollbar"
       >
         {scenes.map((scene, i) => {
-          const { Icon, label, title, body, hashtag, isResolution } = scene
+          const { icon: Icon, label, title, body, hashtag, isResolution } = scene
           return (
             <div
               key={i}
